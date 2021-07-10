@@ -13,6 +13,13 @@ local mouche_2 = Instance.new("TextLabel")
 local Grab = Instance.new("TextButton")
 local Grab_Roundify_12px = Instance.new("ImageLabel")
 local Grab_2 = Instance.new("TextLabel")
+local infJumps = Instance.new("TextButton")
+local infJumps_Roundify_12px = Instance.new("ImageLabel")
+local infJumps_2 = Instance.new("TextLabel")
+local walkspeed = Instance.new("TextBox")
+local v = Instance.new("TextButton")
+local TextButton_Roundify_12px = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
 local chienne = Instance.new("ImageLabel")
 local nesoyezpas = Instance.new("Frame")
 local Vousavezunpetitpepe_2 = Instance.new("TextLabel")
@@ -31,7 +38,7 @@ pourquo.Parent = pourquoitesvous
 pourquo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 pourquo.BackgroundTransparency = 1.000
 pourquo.Position = UDim2.new(0.132010356, 0, 0.0190703217, 0)
-pourquo.Size = UDim2.new(0, 136, 0, 223)
+pourquo.Size = UDim2.new(0, 136, 0, 236)
 pourquo.Image = "rbxassetid://3570695787"
 pourquo.ImageColor3 = Color3.fromRGB(0, 170, 255)
 pourquo.ScaleType = Enum.ScaleType.Slice
@@ -151,6 +158,104 @@ Grab_2.TextScaled = true
 Grab_2.TextSize = 14.000
 Grab_2.TextWrapped = true
 
+infJumps.Name = "infJumps"
+infJumps.Parent = pourquo
+infJumps.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+infJumps.BackgroundTransparency = 1.000
+infJumps.BorderSizePixel = 0
+infJumps.Position = UDim2.new(0.0219999999, 0, 0.493000001, 0)
+infJumps.Size = UDim2.new(0, 135, 0, 27)
+infJumps.Font = Enum.Font.SourceSans
+infJumps.TextColor3 = Color3.fromRGB(0, 0, 0)
+infJumps.TextSize = 14.000
+infJumps.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/HQsQysa8", true))()
+	infJumps.Text = "Loaded!"
+	wait(2)
+	infJumps.Text = "Infinite Jump Is On"
+end)
+
+infJumps_Roundify_12px.Name = "infJumps_Roundify_12px"
+infJumps_Roundify_12px.Parent = infJumps
+infJumps_Roundify_12px.Active = true
+infJumps_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+infJumps_Roundify_12px.BackgroundColor3 = Color3.fromRGB(0, 127, 191)
+infJumps_Roundify_12px.BackgroundTransparency = 1.000
+infJumps_Roundify_12px.Position = UDim2.new(0.481343806, 0, 0.5, 0)
+infJumps_Roundify_12px.Selectable = true
+infJumps_Roundify_12px.Size = UDim2.new(0.947872818, 0, 1, 0)
+infJumps_Roundify_12px.Image = "rbxassetid://3570695787"
+infJumps_Roundify_12px.ImageColor3 = Color3.fromRGB(0, 127, 191)
+infJumps_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+infJumps_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+infJumps_Roundify_12px.SliceScale = 0.120
+
+infJumps_2.Name = "infJumps"
+infJumps_2.Parent = infJumps
+infJumps_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+infJumps_2.BackgroundTransparency = 1.000
+infJumps_2.Position = UDim2.new(-2.38418579e-07, 0, 0, 0)
+infJumps_2.Size = UDim2.new(0, 129, 0, 27)
+infJumps_2.Font = Enum.Font.Bangers
+infJumps_2.Text = "InfJumps"
+infJumps_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+infJumps_2.TextScaled = true
+infJumps_2.TextSize = 14.000
+infJumps_2.TextWrapped = true
+
+walkspeed.Name = "walkspeed"
+walkspeed.Parent = pourquo
+walkspeed.BackgroundColor3 = Color3.fromRGB(0, 127, 191)
+walkspeed.BorderSizePixel = 0
+walkspeed.Position = UDim2.new(0.0273985025, 0, 0.656779647, 0)
+walkspeed.Size = UDim2.new(0, 128, 0, 31)
+walkspeed.Font = Enum.Font.Bangers
+walkspeed.Text = "WalkSpeed"
+walkspeed.TextColor3 = Color3.fromRGB(0, 0, 0)
+walkspeed.TextScaled = true
+walkspeed.TextSize = 14.000
+walkspeed.TextWrapped = true
+
+v.Name = "v"
+v.Parent = pourquo
+v.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+v.BackgroundTransparency = 1.000
+v.BorderSizePixel = 0
+v.Position = UDim2.new(0.0217264965, 0, 0.813559294, 0)
+v.Size = UDim2.new(0, 129, 0, 36)
+v.Font = Enum.Font.SourceSans
+v.TextColor3 = Color3.fromRGB(0, 0, 0)
+v.TextSize = 14.000
+v.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = walkspeed.Text
+end)
+
+TextButton_Roundify_12px.Name = "TextButton_Roundify_12px"
+TextButton_Roundify_12px.Parent = v
+TextButton_Roundify_12px.Active = true
+TextButton_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_12px.BackgroundTransparency = 1.000
+TextButton_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextButton_Roundify_12px.Selectable = true
+TextButton_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_12px.Image = "rbxassetid://3570695787"
+TextButton_Roundify_12px.ImageColor3 = Color3.fromRGB(0, 127, 191)
+TextButton_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_12px.SliceScale = 0.120
+
+TextLabel.Parent = v
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Size = UDim2.new(0, 129, 0, 36)
+TextLabel.Font = Enum.Font.Bangers
+TextLabel.Text = "Set WalkSpeed"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
 chienne.Name = " chienne"
 chienne.Parent = pourquoitesvous
 chienne.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -258,7 +363,7 @@ end)
 
 -- Scripts:
 
-local function LAPPFY_fake_script() -- pourquoitesvous.Script 
+local function BQZKKGG_fake_script() -- pourquoitesvous.Script 
 	local script = Instance.new('Script', pourquoitesvous)
 
 	frame = script.Parent.pourquo
@@ -266,8 +371,8 @@ local function LAPPFY_fake_script() -- pourquoitesvous.Script
 	frame.Active = true
 	frame.Selectable = true
 end
-coroutine.wrap(LAPPFY_fake_script)()
-local function CRPZ_fake_script() -- pourquoitesvous.Script 
+coroutine.wrap(BQZKKGG_fake_script)()
+local function DHDTM_fake_script() -- pourquoitesvous.Script 
 	local script = Instance.new('Script', pourquoitesvous)
 
 	frame = script.Parent[" chienne"]
@@ -275,4 +380,4 @@ local function CRPZ_fake_script() -- pourquoitesvous.Script
 	frame.Active = true
 	frame.Selectable = true
 end
-coroutine.wrap(CRPZ_fake_script)()
+coroutine.wrap(DHDTM_fake_script)()
