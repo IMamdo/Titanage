@@ -1,0 +1,95 @@
+
+local Character = game:GetService("Players").LocalPlayer.Character
+local pourquoitesvous = Instance.new("ScreenGui")
+local pourquoitesvousunechienne = Instance.new("ImageLabel")
+local nesoyezpasstupide = Instance.new("Frame")
+local Vousavezunpetitpepe = Instance.new("TextLabel")
+local Grab = Instance.new("TextButton")
+local Bve = Instance.new("ImageLabel")
+local Grab_2 = Instance.new("TextLabel")
+
+--Properties:
+
+pourquoitesvous.Name = "pourquoi êtes-vous"
+pourquoitesvous.Parent = game.CoreGui
+
+pourquoitesvousunechienne.Name = "pourquoi êtes-vous une chienne"
+pourquoitesvousunechienne.Parent = pourquoitesvous
+pourquoitesvousunechienne.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+pourquoitesvousunechienne.BackgroundTransparency = 1.000
+pourquoitesvousunechienne.Position = UDim2.new(0.0742018968, 0, 0.13587603, 0)
+pourquoitesvousunechienne.Size = UDim2.new(0, 161, 0, 314)
+pourquoitesvousunechienne.Image = "rbxassetid://3570695787"
+pourquoitesvousunechienne.ImageColor3 = Color3.fromRGB(0, 170, 255)
+pourquoitesvousunechienne.ScaleType = Enum.ScaleType.Slice
+pourquoitesvousunechienne.SliceCenter = Rect.new(100, 100, 100, 100)
+pourquoitesvousunechienne.SliceScale = 0.120
+
+nesoyezpasstupide.Name = "ne soyez pas stupide"
+nesoyezpasstupide.Parent = pourquoitesvousunechienne
+nesoyezpasstupide.BackgroundColor3 = Color3.fromRGB(0, 143, 214)
+nesoyezpasstupide.BorderSizePixel = 0
+nesoyezpasstupide.Position = UDim2.new(-0.000332266092, 0, -0.00106662512, 0)
+nesoyezpasstupide.Size = UDim2.new(0, 161, 0, 28)
+
+Vousavezunpetitpepe.Name = "Vous avez un petit pepe"
+Vousavezunpetitpepe.Parent = nesoyezpasstupide
+Vousavezunpetitpepe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vousavezunpetitpepe.BackgroundTransparency = 1.000
+Vousavezunpetitpepe.Position = UDim2.new(0, 0, -2.72478388e-07, 0)
+Vousavezunpetitpepe.Size = UDim2.new(0, 161, 0, 28)
+Vousavezunpetitpepe.Font = Enum.Font.Bangers
+Vousavezunpetitpepe.Text = "Titanage "
+Vousavezunpetitpepe.TextColor3 = Color3.fromRGB(0, 0, 0)
+Vousavezunpetitpepe.TextScaled = true
+Vousavezunpetitpepe.TextSize = 14.000
+Vousavezunpetitpepe.TextWrapped = true
+
+Grab.Name = "Grab"
+Grab.Parent = pourquoitesvous
+Grab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Grab.BackgroundTransparency = 1.000
+Grab.BorderSizePixel = 0
+Grab.Position = UDim2.new(0.0914581567, 0, 0.189511329, 0)
+Grab.Size = UDim2.new(0, 123, 0, 41)
+Grab.Font = Enum.Font.SourceSans
+Grab.TextColor3 = Color3.fromRGB(0, 0, 0)
+Grab.TextSize = 14.000
+Grab.MouseButton1Down:Connect(function()
+	Character.DescendantAdded:Connect(function(A_1)
+		wait(2)
+		if A_1.Name == "Grip" then
+			Character:Destroy()
+			wait(7)
+			game:GetService("TeleportService"):Teleport(6737540754)
+		end
+	end)
+end)
+
+Bve.Name = "Bve"
+Bve.Parent = Grab
+Bve.Active = true
+Bve.AnchorPoint = Vector2.new(0.5, 0.5)
+Bve.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Bve.BackgroundTransparency = 1.000
+Bve.Position = UDim2.new(0.5, 0, 0.5, 0)
+Bve.Selectable = true
+Bve.Size = UDim2.new(1, 0, 1, 0)
+Bve.Image = "rbxassetid://3570695787"
+Bve.ImageColor3 = Color3.fromRGB(0, 127, 191)
+Bve.ScaleType = Enum.ScaleType.Slice
+Bve.SliceCenter = Rect.new(100, 100, 100, 100)
+Bve.SliceScale = 0.120
+
+Grab_2.Name = "Grab"
+Grab_2.Parent = Grab
+Grab_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Grab_2.BackgroundTransparency = 1.000
+Grab_2.Position = UDim2.new(0.048780486, 0, 0, 0)
+Grab_2.Size = UDim2.new(0, 111, 0, 41)
+Grab_2.Font = Enum.Font.Bangers
+Grab_2.Text = "Anti Grab"
+Grab_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Grab_2.TextScaled = true
+Grab_2.TextSize = 14.000
+Grab_2.TextWrapped = true
