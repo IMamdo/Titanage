@@ -38,7 +38,7 @@ pourquo.Parent = pourquoitesvous
 pourquo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 pourquo.BackgroundTransparency = 1.000
 pourquo.Position = UDim2.new(0.132010356, 0, 0.0190703217, 0)
-pourquo.Size = UDim2.new(0, 136, 0, 236)
+pourquo.Size = UDim2.new(0, 136, 0, 299)
 pourquo.Image = "rbxassetid://3570695787"
 pourquo.ImageColor3 = Color3.fromRGB(0, 170, 255)
 pourquo.ScaleType = Enum.ScaleType.Slice
@@ -76,7 +76,7 @@ mouche.Font = Enum.Font.SourceSans
 mouche.TextColor3 = Color3.fromRGB(0, 0, 0)
 mouche.TextSize = 14.000
 mouche.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('https://pastebin.com/raw/h1BNUv7L'),true))()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/LL6dytaA'),true))()
 	mouche_2.Text = "Press G to fly and unfly"
 	mouche_2.TextSize = 10.000
 end)
@@ -170,9 +170,9 @@ infJumps.TextColor3 = Color3.fromRGB(0, 0, 0)
 infJumps.TextSize = 14.000
 infJumps.MouseButton1Click:Connect(function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/HQsQysa8", true))()
-	infJumps.Text = "Loaded!"
+	infJumps_2.Text = "Loaded!"
 	wait(2)
-	infJumps.Text = "Infinite Jump Is On"
+	infJumps_2.Text = "Infinite Jump Is On"
 end)
 
 infJumps_Roundify_12px.Name = "infJumps_Roundify_12px"
@@ -294,7 +294,7 @@ injector.BackgroundColor3 = Color3.fromRGB(0, 127, 191)
 injector.BorderSizePixel = 0
 injector.Position = UDim2.new(0.0367647074, 0, 0.25163275, 0)
 injector.Size = UDim2.new(0, 124, 0, 26)
-injector.Font = Enum.Font.Bangers
+injector.Font = Enum.Font.Arial
 injector.Text = "Player Name"
 injector.TextColor3 = Color3.fromRGB(0, 0, 0)
 injector.TextScaled = true
@@ -340,7 +340,6 @@ Tp.TextScaled = true
 Tp.TextSize = 14.000
 Tp.TextWrapped = true
 
-
 for _, playerss in pairs(game.Players:GetChildren()) do
 	print("("..playerss.Name..  ") <-- 5C_G WROTE THIS")
 end
@@ -360,10 +359,33 @@ tpB.Activated:Connect(function()
 		end
 	end
 end)
-
 -- Scripts:
 
-local function BQZKKGG_fake_script() -- pourquoitesvous.Script 
+local function XHSYD_fake_script() -- pourquo.LocalScript 
+	local script = Instance.new('LocalScript', pourquo)
+
+	local Plr = game.Players.LocalPlayer
+	
+	Plr:GetMouse().KeyDown:Connect(function(K)
+		if K == "p" then
+			pourquo.Visible = true
+		end
+	end)
+end
+coroutine.wrap(XHSYD_fake_script)()
+local function LCPI_fake_script() -- chienne.LocalScript 
+	local script = Instance.new('LocalScript', chienne)
+
+	local Plr = game.Players.LocalPlayer
+	
+	Plr:GetMouse().KeyDown:Connect(function(K)
+		if K == "p" then
+			chienne.Visible = true
+		end
+	end)
+end
+coroutine.wrap(LCPI_fake_script)()
+local function EOEETR_fake_script() -- pourquoitesvous.Script 
 	local script = Instance.new('Script', pourquoitesvous)
 
 	frame = script.Parent.pourquo
@@ -371,8 +393,8 @@ local function BQZKKGG_fake_script() -- pourquoitesvous.Script
 	frame.Active = true
 	frame.Selectable = true
 end
-coroutine.wrap(BQZKKGG_fake_script)()
-local function DHDTM_fake_script() -- pourquoitesvous.Script 
+coroutine.wrap(EOEETR_fake_script)()
+local function NZLOV_fake_script() -- pourquoitesvous.Script 
 	local script = Instance.new('Script', pourquoitesvous)
 
 	frame = script.Parent[" chienne"]
@@ -380,4 +402,4 @@ local function DHDTM_fake_script() -- pourquoitesvous.Script
 	frame.Active = true
 	frame.Selectable = true
 end
-coroutine.wrap(DHDTM_fake_script)()
+coroutine.wrap(NZLOV_fake_script)()
