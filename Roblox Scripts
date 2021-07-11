@@ -1,3 +1,4 @@
 _G.Key = "NoLongerScuffed"
 
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/Urbanstorms/Asterisk-Hub/main/Titanage"),true))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/IMamdo/Script/main/ANTI%20GRAB'),true))()
